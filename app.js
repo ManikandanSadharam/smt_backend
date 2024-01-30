@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(path.join(__dirname,'uploads') ) )
 
+
+
 const products = require('./routes/product')
 const auth = require('./routes/auth')
 const order = require('./routes/order')
